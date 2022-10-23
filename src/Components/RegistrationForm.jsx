@@ -34,11 +34,18 @@ class RegistrationForm extends Component {
                 date:e.target.value
             });   
         }
+        const submitForm=()=>{
+            var name=this.state.name;
+            var dob = this.state.date;
+            var gender=this.state.gender;
+            var password=this.state.password;
+            var nic=this.state.nic;
+        }
         console.log(this.state.date);
         return (
             <div className='form'>
                 <h1>Register new user</h1><p/>
-                <form onSubmit={changeName}>
+                <form onSubmit={submitForm}>
                     <input type="text" placeholder='Enter Name' value={this.state.name} onChange={changeName}/><br/>
                     <input type="text" placeholder='Enter NIC number'value={this.state.nic} onChange={changeNIC}/><br/>
                     <div >

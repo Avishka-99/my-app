@@ -15,7 +15,6 @@ class Adminpanel extends Component {
     }
    }   
     render(){
-        const parentFunction=((data)=>{data()});
         const Employees=()=>{
            this.setState({Employees:true})
            this.setState({Stats:false})
