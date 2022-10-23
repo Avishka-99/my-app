@@ -13,6 +13,5 @@ class Menuitems extends Component{
             </div>
         );
     }
-}
-
+};
 export default Menuitems;
