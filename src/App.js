@@ -1,17 +1,9 @@
-import './CSS/dashboard.css';
+
 import './App.css';
-//import Menuitems from "./Components/Menuitems"
+import Adminpanel from './Components/Adminpanel';
 function App() {
-  const arr = ["Settings","Add"]
   return (
-    
-    <div className="App">
-      <div className='sideBar'>
-        <div className='userIcon'>
-        </div>
-      </div>
-      <div className='content'></div>
-    </div>
+    <Adminpanel/>
   );
 }
 export default App;

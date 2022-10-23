@@ -1,10 +1,27 @@
 .menu{
     width: 100%;
     height: 10%;
-    background-color: blanchedalmond;
+    background-color:royalblue;
+    display: flex;
+    border-radius: 20px;
+    margin-bottom: 1vh;
+    
 }
 .icon{
     width: 20%;
     height:100%;
     background-color: blueviolet;
+    border-radius: 20px;
+}
+.name{
+    font-size: 2em;
+    text-align: center;
+    margin-top: 18px;
+    font-family: Calibri,'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+.nameContainer{
+    width: 80%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 20px;
 }

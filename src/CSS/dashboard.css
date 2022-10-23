@@ -6,7 +6,7 @@
     margin-top: 0.8%;
     width: 20%;
     border-radius: 25px;
-    background-color: dodgerblue;
+    background-color: transparent;
     color: darkblue;
     height: 97vh;
     align-items: center;
@@ -27,9 +27,10 @@
     height: 20vh;
     width: 20vh;
     border-radius: 100px;
-    background-color:black;
+    background-color:grey;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5vh;
+    margin-bottom: 2vh;
     
 }
