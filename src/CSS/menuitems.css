@@ -18,10 +18,14 @@
     text-align: center;
     margin-top: 18px;
     font-family: Calibri,'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    -webkit-user-select:none;
 }
 .nameContainer{
     width: 80%;
     height: 100%;
     background-color: transparent;
     border-radius: 20px;
+}
+.iconBox{
+    margin-top: 20px;
 }
