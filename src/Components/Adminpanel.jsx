@@ -11,22 +11,25 @@ class Adminpanel extends Component {
     this.state={
         Employees:false,
         Stats:false,
-        NewUser:true
+        NewUser:false
     }
    }   
     render(){
         const parentFunction=((data)=>{data()});
         const Employees=()=>{
-            console.log("Employees here");
-           //this.setState({Employees:true})
+           this.setState({Employees:true})
+           this.setState({Stats:false})
+           this.setState({NewUser:false})
         };
         const Stats=()=>{
-            console.log("Stats here");
-           //this.setState({Employees:true})
+            this.setState({Employees:false})
+            this.setState({Stats:true})
+            this.setState({NewUser:false})
         };
         const NewUser=()=>{
-            console.log("New user here");
-           //this.setState({Employees:true})
+            this.setState({Employees:false})
+            this.setState({Stats:false})
+            this.setState({NewUser:true})
         };
         const menuNames = [["Employees",<PersonIcon fontSize="large"/>,Employees],["Stats",<TrendingUpIcon fontSize="large"/>,Stats],["New User",<PersonAddIcon fontSize="large"/>,NewUser]];
         
@@ -39,7 +42,8 @@ class Adminpanel extends Component {
                     
             </div>
         <div className='content'>
-            <RegistrationForm/>
+            {this.state.NewUser && <RegistrationForm/>}
+            
         </div>
     </div>
         

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import '../CSS/menuitems.css'
 class Menuitems extends Component {
     render() {
-        console.log(this.props.name)
         return (
             
             <div className='menu' onClick={()=>this.props.parentFunction()}>
