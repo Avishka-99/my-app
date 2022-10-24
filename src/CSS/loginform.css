@@ -1,0 +1,47 @@
+.outerContainer{
+    width: 100vw;
+    height: 100vh;
+    border-radius: 100px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+}
+.innerContainer{
+    align-content: center;
+    margin-left: 30%;
+    width: 50vw;
+    height: 50vh;
+    margin-top: 100px;
+}
+input[type="text"],input[type="password"]{
+    border-width:0px;
+    border-radius: 10px;
+    width: 30%;
+    display:inline-block;
+    padding:15px 10px;
+    line-height:140%;
+    font-size: larger;
+    margin-bottom: 20px;
+    background-color: #2b2b2b;
+    color: white;
+}
+input[type="text"]:focus,input[type="password"]:focus{
+    outline: none;
+    box-shadow: 0 0 0 2px orange;
+
+}
+input[type="button"]{
+    margin-top: 5%;
+    width:33%;
+    padding:15px 10px;
+    line-height:120%;
+    font-size:xx-large;
+    border-radius: 50px;
+    border-width: 0px;
+    background-color:coral;
+    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+input[type="button"]:hover{
+    background-color:dodgerblue;
+}

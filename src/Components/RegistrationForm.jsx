@@ -5,60 +5,71 @@ import '../CSS/registrationForm.css';
 class RegistrationForm extends Component {
     constructor(props) {
         super(props);
-        this.state = {name:"",nic:"",gender:"",password:"",date:""};
+        this.state = { name: "", nic: "", gender: "", password: "", date: "", usertype: "" };
     }
     render() {
-        const changeName=(e)=>{
+        const changeName = (e) => {
             this.setState({
-                name:e.target.value
-            });   
+                name: e.target.value
+            });
         }
-        const changeNIC=(e)=>{
+        const changeNIC = (e) => {
             this.setState({
-                nic:e.target.value
-            });   
+                nic: e.target.value
+            });
         }
-        const changeGENDER=(e)=>{
+        const changeGENDER = (e) => {
             this.setState({
-                gender:e.target.value
-            });   
+                gender: e.target.value
+            });
         }
-        
-        const changePASSWORD=(e)=>{
+
+        const changePASSWORD = (e) => {
             this.setState({
-                password:e.target.value
-            });   
+                password: e.target.value
+            });
         }
-        const changeDATE=(e)=>{
+        const changeDATE = (e) => {
             this.setState({
-                date:e.target.value
-            });   
+                date: e.target.value
+            });
         }
-        const submitForm=()=>{
-            var name=this.state.name;
+        const changeUserType = (e) => {
+            this.setState({
+                usertype: e.target.value
+            });
+        }
+        const submitForm = () => {
+            var name = this.state.name;
             var dob = this.state.date;
-            var gender=this.state.gender;
-            var password=this.state.password;
-            var nic=this.state.nic;
+            var gender = this.state.gender;
+            var password = this.state.password;
+            var nic = this.state.nic;
+            var usertype = this.state.usertype;
         }
         console.log(this.state.date);
         return (
             <div className='form'>
-                <h1>Register new user</h1><p/>
+                <h1>Register new user</h1><p />
                 <form onSubmit={submitForm}>
-                    <input type="text" placeholder='Enter Name' value={this.state.name} onChange={changeName}/><br/>
-                    <input type="text" placeholder='Enter NIC number'value={this.state.nic} onChange={changeNIC}/><br/>
-                    <div >
-                        <input type="radio" value="MALE" name='gender' onChange={changeGENDER}/><label>Male</label>
-                        <input type="radio" value="FEMALE" name="gender" onChange={changeGENDER}/> <label>Female</label><br/>
+                    <input type="text" placeholder='Enter Name' value={this.state.name} onChange={changeName} /><br />
+                    <input type="text" placeholder='Enter NIC number' value={this.state.nic} onChange={changeNIC} /><br />
+                    <input type="password" placeholder='Enter password' /><br />
+                    <div className='radio'>
+                        <input type="radio" value="MALE" name='gender' onChange={changeGENDER} /><label>Male</label>
+                        <input type="radio" value="FEMALE" name="gender" onChange={changeGENDER} /> <label>Female</label><br />
                     </div>
-                    
-                    <input type="date"onChange={changeDATE}/><br/>
-                    <input type="password" placeholder='Enter password'/><br/>
-                    <input type="password" placeholder='Confirm password'/><br/>
-                    <input type="submit"/>
+                    <div className='radio' >
+                        <input type="radio" value="ADMIN" name='usertype' onChange={changeUserType} /><label>Admin</label>
+                        <input type="radio" value="MANAGER" name='usertype' onChange={changeUserType} /><label>Manager</label>
+                        <input type="radio" value="CLERK" name='usertype' onChange={changeUserType} /><label>Clerk</label>
+                        <input type="radio" value="ACCOUNTANT" name='usertype' onChange={changeUserType} /><label>Accountant</label>
+                        <input type="radio" value="SALESMAN" name="usertype" onChange={changeUserType} /> <label>Salesman</label><br />
+                    </div>
+                    <input type="date" onChange={changeDATE} /><br />
+                    <input type="submit" />
                 </form>
-                    
+
             </div>
         );
     }

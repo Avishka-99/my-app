@@ -88,9 +88,12 @@ input[type="submit"]{
     font-size:xx-large;
     border-radius: 50px;
     border-width: 0px;
-    background-color:coral;
+    background-color:tomato;
     font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 }
 input[type="submit"]:hover{
-    background-color:violet;
+    background-color:coral;
+}
+.radio{
+    margin-bottom: 12px;
 }

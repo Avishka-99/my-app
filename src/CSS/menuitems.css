@@ -29,3 +29,9 @@
 .iconBox{
     margin-top: 20px;
 }
+.menu:hover>.icon{
+    background-color:mediumpurple;
+}
+.menu:hover{
+    background-color: dodgerblue;
+}
