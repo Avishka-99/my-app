@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
 import '../CSS/registrationForm.css';
 class RegistrationForm extends Component {
     constructor(props) {
@@ -49,12 +47,12 @@ class RegistrationForm extends Component {
         }
         console.log(this.state.date);
         return (
-            <div className='form'>
+            <div className='Regform'>
                 <h1>Register new user</h1><p />
                 <form onSubmit={submitForm}>
-                    <input type="text" placeholder='Enter Name' value={this.state.name} onChange={changeName} /><br />
-                    <input type="text" placeholder='Enter NIC number' value={this.state.nic} onChange={changeNIC} /><br />
-                    <input type="password" placeholder='Enter password' /><br />
+                    <input type="text" placeholder='Enter Name' value={this.state.name} onChange={changeName} className="registrationTextBox"/><br />
+                    <input type="text" placeholder='Enter NIC number' value={this.state.nic} onChange={changeNIC} className="registrationTextBox"/><br />
+                    <input type="password" placeholder='Enter password' className="registrationTextBox" /><br />
                     <div className='radio'>
                         <input type="radio" value="MALE" name='gender' onChange={changeGENDER} /><label>Male</label>
                         <input type="radio" value="FEMALE" name="gender" onChange={changeGENDER} /> <label>Female</label><br />
@@ -67,7 +65,7 @@ class RegistrationForm extends Component {
                         <input type="radio" value="SALESMAN" name="usertype" onChange={changeUserType} /> <label>Salesman</label><br />
                     </div>
                     <input type="date" onChange={changeDATE} /><br />
-                    <input type="submit" />
+                    <input type="submit" className='regUser' />
                 </form>
 
             </div>

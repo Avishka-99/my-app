@@ -3,7 +3,6 @@ import '../CSS/menuitems.css'
 class Menuitems extends Component {
     render() {
         return (
-            
             <div className='menu' onClick={()=>this.props.parentFunction()}>
                 <div className='icon'>
                     <div className='iconBox'>{this.props.name[1]}</div>

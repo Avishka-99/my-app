@@ -8,11 +8,11 @@ h1{
    -khtml-user-select: none;
     user-select:none;
 }
-.form{
+.Regform{
     margin-top: auto;
     margin-bottom: auto;
 }
-input[type="text"],input[type="password"]{
+.registrationTextBox{
     border-width:0px;
     border-radius: 10px;
     width: 30%;
@@ -24,7 +24,7 @@ input[type="text"],input[type="password"]{
     background-color: #2b2b2b;
     color: white;
 }
-input[type="text"]:focus,input[type="password"]:focus{
+.registrationTextBox:focus,.registrationTextBox:focus{
     outline: none;
     box-shadow: 0 0 0 2px orange;
 
@@ -81,7 +81,7 @@ input[type="date"]:focus
     font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     
 }
-input[type="submit"]{
+.regUser{
     width:30%;
     padding:15px 10px;
     line-height:120%;
@@ -91,7 +91,7 @@ input[type="submit"]{
     background-color:tomato;
     font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 }
-input[type="submit"]:hover{
+.regUser:hover{
     background-color:coral;
 }
 .radio{

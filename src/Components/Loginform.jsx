@@ -18,8 +18,8 @@ class Loginform extends Component {
             <div className='outerContainer'>
                 <div className='innerContainer'>
                 <form>
-                    <input type="text" placeholder='Enter Name' value={this.state.name} onChange={changeName}/><br />
-                    <input type="password" placeholder='Enter password' onChange={changePassword}/><br />
+                    <input type="text" placeholder='Enter Name' value={this.state.name} onChange={changeName} className="loginCredentials"/><br />
+                    <input type="password" placeholder='Enter password' onChange={changePassword} className="loginCredentials"/><br />
                     <input type="button" value='Login' onClick={()=>this.props.parentFunction(this.state.name,this.state.password)}/>
                 </form>
                 </div>
